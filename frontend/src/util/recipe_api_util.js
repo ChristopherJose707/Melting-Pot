@@ -8,6 +8,7 @@ export const getUserRecipes = authorId => {
     return axios.get(`/api/recipes/${authorId}`)
 }; 
 
+
 export const getRecipe = recipeId => {
     return axios.get(`/api/recipes/${recipeId}`)
 }; // this id refers to the recipes 

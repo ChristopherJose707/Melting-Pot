@@ -1,10 +1,12 @@
 import { connect } from 'react-redux'
-import { getUserRecipes } from '../../actions/recipe_actions'
+import { getUserRecipes, getRecipes } from '../../actions/recipe_actions'
 import Recipes from './3.recipes'
 
 const mapStateToProps = (state) => {
     return {
-        currentUser: state.session.currentUser.user
+        currentUser: state.session.currentUser.user,
+        recipes: state.entities.recipes.user,
+        recipesPosted : state.entities.users.recipesPosted
     };
 };
 
