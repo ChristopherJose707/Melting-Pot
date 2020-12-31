@@ -24,7 +24,9 @@ const UserSchema = new Schema({
     },
     friends: [{type: Schema.Types.ObjectId, ref: 'users', required: false}],
     likedRecipes:[{type: Schema.Types.ObjectId, ref: 'recipes', required: false}],
-    dietaryRestrictions: [{type: String, required: true}]
+    dietaryRestrictions: [{type: String, required: true}],
+    recipesPosted: [{ type: Schema.Types.ObjectId, ref: 'users', required: false }],
+
 
 }, {
   timestamps: true

@@ -10,6 +10,7 @@ class Profile extends React.Component {
   componentDidMount(){
     this.props.fetchUsers()
   }
+
   render() {
     return (
       <div>
@@ -19,8 +20,7 @@ class Profile extends React.Component {
         <br></br>
         {this.props.currentUser.bio}
         <br></br>
-        
-
+      
         < NavBarContainer />
 
       </div>

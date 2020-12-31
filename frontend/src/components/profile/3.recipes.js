@@ -3,7 +3,10 @@ import React from 'react'
 class Recipes extends React.Component {
     constructor(props) {
         super(props);
-
+        
+        this.state = {
+            recipesPosted: []
+        }
     }
 
     componentDidMount(){
@@ -13,7 +16,7 @@ class Recipes extends React.Component {
     render() {
         return (
             <div>
-                {this.props.recipes.name}
+                
             </div>
         )
     }

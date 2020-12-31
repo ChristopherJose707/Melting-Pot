@@ -4,9 +4,7 @@ import Recipes from './3.recipes'
 
 const mapStateToProps = (state) => {
     return {
-        currentUser: state.session.currentUser.user,
-        recipes: state.entities.recipes
-
+        currentUser: state.session.currentUser.user
     };
 };
 
